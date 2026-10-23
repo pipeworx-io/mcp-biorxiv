@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-biorxiv",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "bioRxiv / medRxiv MCP",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-d028b4c24d6ecd3f1c899fcf363b965114cde70884142ac3f3aacbec6f15eeaf",
-    "sourceCommit": "5d8d3a58a457b8464c117515d81b8b6ecb53fdfb"
+    "sourceHash": "v1-3a913124f65065c2f38c154feaeb752c87861273715c69e6df62182bdf3c555d",
+    "sourceCommit": "70a4e816a9195016cd4af92dca2019485d4c3865"
   }
 }
