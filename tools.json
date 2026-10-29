@@ -1,0 +1,169 @@
+[
+  {
+    "name": "details",
+    "description": "DEPRECATED ALIAS for biorxiv_details — identical behavior, kept for existing callers. New callers should use biorxiv_details.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "server": {
+          "type": "string",
+          "description": "biorxiv | medrxiv"
+        },
+        "doi": {
+          "type": "string",
+          "description": "e.g. \"10.1101/2024.01.15.575982\" (mutually exclusive with date)"
+        },
+        "date_or_range": {
+          "type": "string",
+          "description": "YYYY-MM-DD or YYYY-MM-DD/YYYY-MM-DD"
+        },
+        "cursor": {
+          "type": "number",
+          "description": "Pagination offset (default 0)."
+        }
+      },
+      "required": [
+        "server"
+      ]
+    }
+  },
+  {
+    "name": "biorxiv_details",
+    "description": "bioRxiv / medRxiv preprint metadata by DOI or by date / date range.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "server": {
+          "type": "string",
+          "description": "biorxiv | medrxiv"
+        },
+        "doi": {
+          "type": "string",
+          "description": "e.g. \"10.1101/2024.01.15.575982\" (mutually exclusive with date)"
+        },
+        "date_or_range": {
+          "type": "string",
+          "description": "YYYY-MM-DD or YYYY-MM-DD/YYYY-MM-DD"
+        },
+        "cursor": {
+          "type": "number",
+          "description": "Pagination offset (default 0)."
+        }
+      },
+      "required": [
+        "server"
+      ]
+    }
+  },
+  {
+    "name": "published",
+    "description": "DEPRECATED ALIAS for biorxiv_published — identical behavior, kept for existing callers. New callers should use biorxiv_published.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "server": {
+          "type": "string"
+        },
+        "date_or_range": {
+          "type": "string"
+        },
+        "cursor": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "server",
+        "date_or_range"
+      ]
+    }
+  },
+  {
+    "name": "biorxiv_published",
+    "description": "bioRxiv / medRxiv preprints that have since been published in a peer-reviewed journal.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "server": {
+          "type": "string"
+        },
+        "date_or_range": {
+          "type": "string"
+        },
+        "cursor": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "server",
+        "date_or_range"
+      ]
+    }
+  },
+  {
+    "name": "publisher",
+    "description": "DEPRECATED ALIAS for biorxiv_publisher — identical behavior, kept for existing callers. New callers should use biorxiv_publisher.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "server": {
+          "type": "string"
+        },
+        "prefix": {
+          "type": "string",
+          "description": "DOI prefix, e.g. \"10.1038\""
+        },
+        "date_or_range": {
+          "type": "string"
+        },
+        "cursor": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "server",
+        "prefix",
+        "date_or_range"
+      ]
+    }
+  },
+  {
+    "name": "biorxiv_publisher",
+    "description": "bioRxiv / medRxiv preprints subsequently published by a given DOI prefix (e.g. \"10.1038\" for Nature).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "server": {
+          "type": "string"
+        },
+        "prefix": {
+          "type": "string",
+          "description": "DOI prefix, e.g. \"10.1038\""
+        },
+        "date_or_range": {
+          "type": "string"
+        },
+        "cursor": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "server",
+        "prefix",
+        "date_or_range"
+      ]
+    }
+  },
+  {
+    "name": "summary",
+    "description": "bioRxiv submission/publication counts. Interval: \"m\" (monthly, default) or \"y\" (yearly). bioRxiv only — medRxiv has no /sum endpoint.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "interval": {
+          "type": "string",
+          "description": "\"m\" (monthly, default) or \"y\" (yearly)"
+        }
+      }
+    }
+  }
+]
