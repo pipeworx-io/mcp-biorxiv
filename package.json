@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-biorxiv",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "bioRxiv / medRxiv MCP",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "biorxiv",
     "gatewaySlug": "biorxiv",
-    "sourceHash": "v1-e7501809e9be1eec8a15b0ec937c17c8de46038ea1d7d1d5ba96ec822080a8d3",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-397fee5efca5dc1ff750cc3c51294e6115dab600aaffc5565c0951e8de19f9db",
+    "sourceCommit": "5cb09714e895571153f3d9663c36ff0f140cadd6"
   }
 }
